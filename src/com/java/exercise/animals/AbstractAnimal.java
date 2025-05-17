@@ -81,7 +81,7 @@ public abstract class AbstractAnimal {
         return "Informazioni sull'animale: \n" +
                 "Età: " + this.age +
                 ", Specie: " + this.species +
-                ", Peso: " + this.weight +
+                ", Peso: " + this.weight + "kg" +
                 ", Colore: " + this.color +
                 ", Habitat: " + this.habitat;
     }

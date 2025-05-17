@@ -14,10 +14,29 @@ public class Main {
 
         // Context: invoke Methods of the newDog Object
         System.out.println(newDog);
+        newDog.dormi();
         newDog.mangia();
         newDog.verso();
 
         // Context: invoke Methods of the emptyDog Object
         System.out.println(emptyDog);
+
+        System.out.println("/--------------------------------------------------------------------/\n");
+        /*
+         * //DEBUG: Test of Sparrow instances and Abstract Methods inherited from
+         * //DEBUG: AbstractAnimal
+         */
+        // Context: Instances of Sparrow Class
+        Sparrow emptySparrow = new Sparrow();
+        Sparrow newSparrow = new Sparrow(2, BigDecimal.valueOf(0.025), "Passer Italiae", "Giallo", "Ovunque", true);
+
+        // Context: invoke Methods of the newSparrow Object
+        System.out.println(newSparrow);
+        newSparrow.dormi();
+        newSparrow.mangia();
+        newSparrow.verso();
+
+        // Context: invoke Methods of the emptySparrow Object
+        System.out.println(emptySparrow);
     }
 }
