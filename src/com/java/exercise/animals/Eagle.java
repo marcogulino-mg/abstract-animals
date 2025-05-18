@@ -2,7 +2,7 @@ package com.java.exercise.animals;
 
 import java.math.BigDecimal;
 
-public class Eagle extends AbstractAnimal {
+public class Eagle extends AbstractAnimal implements IFlying {
     // Context: Attributes
     private BigDecimal wingSpan;
 
@@ -37,6 +37,12 @@ public class Eagle extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Sto mangiando carne");
+    }
+
+    // Context: Methods from IFlying
+    @Override
+    public void Vola() {
+        System.out.println("Sto volando!!!");
     }
 
     // Context: Concrete Methods

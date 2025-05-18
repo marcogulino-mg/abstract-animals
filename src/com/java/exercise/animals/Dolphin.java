@@ -2,7 +2,7 @@ package com.java.exercise.animals;
 
 import java.math.BigDecimal;
 
-public class Dolphin extends AbstractAnimal {
+public class Dolphin extends AbstractAnimal implements ISwimming {
     // Context: Attributes
     private BigDecimal breatherDiameter;
 
@@ -38,6 +38,12 @@ public class Dolphin extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Sto mangiando pesce");
+    }
+
+    // Context: Methods from ISwimming
+    @Override
+    public void Nuota() {
+        System.out.println("Sto nuotando!!!");
     }
 
     // Context: Concrete Methods

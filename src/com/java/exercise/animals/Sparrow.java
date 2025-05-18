@@ -2,7 +2,7 @@ package com.java.exercise.animals;
 
 import java.math.BigDecimal;
 
-public class Sparrow extends AbstractAnimal {
+public class Sparrow extends AbstractAnimal implements IFlying {
     // Context: Attributes
     private boolean isSinger;
 
@@ -37,6 +37,12 @@ public class Sparrow extends AbstractAnimal {
     @Override
     public void mangia() {
         System.out.println("Sto mangiando semi");
+    }
+
+    // Context: Methods from IFlying
+    @Override
+    public void Vola() {
+        System.out.println("Sto volando!!!");
     }
 
     // Context: Concrete Methods
