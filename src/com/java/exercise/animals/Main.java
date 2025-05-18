@@ -76,5 +76,18 @@ public class Main {
 
         // Context: invoke Methods of the emptyDolphin Object
         System.out.println(emptyDolphin);
+
+        System.out.println("/--------------------------------------------------------------------/\n");
+        faiVolare(newEagle);
+        faiVolare(newSparrow);
+        faiNuotare(newDolphin);
+    }
+
+    static void faiVolare(IFlying flyingAnimal) {
+        flyingAnimal.Vola();
+    }
+
+    static void faiNuotare(ISwimming swimmingAnimal) {
+        swimmingAnimal.Nuota();
     }
 }
