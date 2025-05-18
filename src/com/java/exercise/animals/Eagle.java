@@ -10,7 +10,7 @@ public class Eagle extends AbstractAnimal {
     // Context: Constructors
     public Eagle() {
         super();
-        this.wingSpan = BigDecimal.valueOf(1.0);
+        this.wingSpan = BigDecimal.valueOf(1);
     }
 
     public Eagle(int age, BigDecimal weight, String species, String color, String habitat, BigDecimal wingSpan) {

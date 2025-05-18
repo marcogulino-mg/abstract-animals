@@ -46,7 +46,7 @@ public class Main {
          */
         // Context: Instances of Eagle Class
         Eagle emptyEagle = new Eagle();
-        Eagle newEagle = new Eagle(15, BigDecimal.valueOf(0.025), "Aquila Reale", "Marrone", "Zone Montuose",
+        Eagle newEagle = new Eagle(20, BigDecimal.valueOf(0.025), "Aquila Reale", "Marrone", "Zone Montuose",
                 BigDecimal.valueOf(2.2));
 
         // Context: invoke Methods of the newEagle Object
@@ -57,5 +57,24 @@ public class Main {
 
         // Context: invoke Methods of the emptyEagle Object
         System.out.println(emptyEagle);
+
+        System.out.println("/--------------------------------------------------------------------/\n");
+        /*
+         * //DEBUG: Test of Dolphin instances and Abstract Methods inherited from
+         * //DEBUG: AbstractAnimal
+         */
+        // Context: Instances of Dolphin Class
+        Dolphin emptyDolphin = new Dolphin();
+        Dolphin newDolphin = new Dolphin(15, BigDecimal.valueOf(0.025), "Delfino comune", "Blu", "Mare",
+                BigDecimal.valueOf(6));
+
+        // Context: invoke Methods of the newDolphin Object
+        System.out.println(newDolphin);
+        newDolphin.dormi();
+        newDolphin.mangia();
+        newDolphin.verso();
+
+        // Context: invoke Methods of the emptyDolphin Object
+        System.out.println(emptyDolphin);
     }
 }
