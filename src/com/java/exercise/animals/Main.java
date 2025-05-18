@@ -38,5 +38,24 @@ public class Main {
 
         // Context: invoke Methods of the emptySparrow Object
         System.out.println(emptySparrow);
+
+        System.out.println("/--------------------------------------------------------------------/\n");
+        /*
+         * //DEBUG: Test of Eagle instances and Abstract Methods inherited from
+         * //DEBUG: AbstractAnimal
+         */
+        // Context: Instances of Eagle Class
+        Eagle emptyEagle = new Eagle();
+        Eagle newEagle = new Eagle(15, BigDecimal.valueOf(0.025), "Aquila Reale", "Marrone", "Zone Montuose",
+                BigDecimal.valueOf(2.2));
+
+        // Context: invoke Methods of the newEagle Object
+        System.out.println(newEagle);
+        newEagle.dormi();
+        newEagle.mangia();
+        newEagle.verso();
+
+        // Context: invoke Methods of the emptyEagle Object
+        System.out.println(emptyEagle);
     }
 }
